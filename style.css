@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+}
+
+.input {
+    width: 75%;
+    margin: 3rem;
+    padding: 28px;
+    font-size: 25px;
+    border-radius: 33px;
+    border: none;
+    border-bottom: 2px solid;
+    box-shadow: 2px 2px 30px;
+    outline: none;
+}
+
+.container {
+    font-size: 26px;
+    margin: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.definition, .synonym, .phonetic {
+    border: 2px solid;
+    padding: 36px;
+    border-radius: 38px;
+}
+
+.search {
+    width: 116px;
+    height: 48px;
+    border: #7f7373;
+    border-radius: 8px;
+    font-size: 19px;
+    cursor: pointer;
+    background-color: darkgray;
+    transition: 0.5s;
+    box-shadow: 2px 2px 30px;
+}
+
+.search:hover {
+    letter-spacing: 2px;
+    width: 135px;
+}
+
+@media only screen and (max-width: 600px) {
+    .input {
+        width: 88%;
+        /* Make the input full width on smaller screens */
+        margin: 1rem 0;
+        /* Adjust margin */
+    }
+
+    .search {
+        /* Make the search button full width on smaller screens */
+        margin: 1rem 9rem;
+        /* Adjust margin */
+    }
+}
